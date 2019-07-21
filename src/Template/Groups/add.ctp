@@ -23,6 +23,7 @@
         <?php
             echo $this->Form->control('course_id', ['options' => $courses, 'empty' => true]);
             echo $this->Form->control('user_id', ['options' => $users, 'empty' => true]);
+            echo $this->Form->control('title');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

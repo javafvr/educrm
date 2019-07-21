@@ -42,7 +42,7 @@ class EventsFixture extends TestFixture
                 'group_id' => 1,
                 'course_id' => 1,
                 'place_id' => 1,
-                'date' => '2019-07-21 05:35:04'
+                'date' => '2019-07-21 07:16:10'
             ],
         ];
         parent::init();

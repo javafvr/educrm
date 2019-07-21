@@ -47,6 +47,7 @@
                 <th scope="col"><?= __('Id') ?></th>
                 <th scope="col"><?= __('Course Id') ?></th>
                 <th scope="col"><?= __('User Id') ?></th>
+                <th scope="col"><?= __('Title') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($user->groups as $groups): ?>
@@ -54,6 +55,7 @@
                 <td><?= h($groups->id) ?></td>
                 <td><?= h($groups->course_id) ?></td>
                 <td><?= h($groups->user_id) ?></td>
+                <td><?= h($groups->title) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Groups', 'action' => 'view', $groups->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Groups', 'action' => 'edit', $groups->id]) ?>

@@ -61,6 +61,11 @@ class GroupsTable extends Table
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
 
+        $validator
+            ->scalar('title')
+            ->maxLength('title', 255)
+            ->allowEmptyString('title');
+
         return $validator;
     }
 

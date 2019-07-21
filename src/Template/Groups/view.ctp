@@ -31,6 +31,10 @@
             <td><?= $group->has('user') ? $this->Html->link($group->user->id, ['controller' => 'Users', 'action' => 'view', $group->user->id]) : '' ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Title') ?></th>
+            <td><?= h($group->title) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($group->id) ?></td>
         </tr>

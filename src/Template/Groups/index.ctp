@@ -24,6 +24,7 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('course_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -33,6 +34,7 @@
                 <td><?= $this->Number->format($group->id) ?></td>
                 <td><?= $group->has('course') ? $this->Html->link($group->course->title, ['controller' => 'Courses', 'action' => 'view', $group->course->id]) : '' ?></td>
                 <td><?= $group->has('user') ? $this->Html->link($group->user->id, ['controller' => 'Users', 'action' => 'view', $group->user->id]) : '' ?></td>
+                <td><?= h($group->title) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $group->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $group->id]) ?>

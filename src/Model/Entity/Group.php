@@ -9,6 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int|null $course_id
  * @property int|null $user_id
+ * @property string|null $title
  *
  * @property \App\Model\Entity\Course $course
  * @property \App\Model\Entity\User $user
@@ -28,6 +29,7 @@ class Group extends Entity
     protected $_accessible = [
         'course_id' => true,
         'user_id' => true,
+        'title' => true,
         'course' => true,
         'user' => true,
         'events' => true
